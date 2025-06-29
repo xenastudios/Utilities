@@ -1,0 +1,155 @@
+#
+# Utilities By Xena Studios
+# Version $version
+#
+
+# Plugin Messages
+messages:
+  error:
+    usage: "<red>Usage: <usage></red>"
+    player-only: "<red>Only a player can execute this command!</red>"
+    no-player: "<red>That player doesn't exist!</red>"
+
+# Plugin Commands
+commands:
+  adventure:
+    enabled: true
+    permissions:
+      default: utilities.command.adventure
+      others: utilities.command.adventure.others
+    aliases:
+      - gma
+      - gm2
+    messages:
+      set: "<green>Your gamemode has been set to Adventure.</green>"
+      others-set: "<green>Set <player>'s gamemode to Adventure.</green>"
+  anvil:
+    enabled: true
+    permission: utilities.command.anvil
+    aliases: [ ]
+  craft:
+    enabled: true
+    permission: utilities.command.craft
+    aliases:
+      - workbench
+      - wb
+  creative:
+    enabled: true
+    permissions:
+      default: utilities.command.creative
+      others: utilities.command.creative.others
+    aliases:
+      - gmc
+      - gm1
+    messages:
+      set: "<green>Your gamemode has been set to Creative.</green>"
+      others-set: "<green>Set <player>'s gamemode to Creative.</green>"
+  discord:
+    enabled: true
+    permission: utilities.command.discord
+    aliases: [ ]
+    message: "<white>Discord: <gold><click:open_url:'https://discord.gg/server'>https://discord.gg/server</click></gold></white>"
+  fly:
+    enabled: true
+    permissions:
+      default: utilities.command.fly
+      others: utilities.command.fly.others
+    aliases:
+      - flight
+      - togglefly
+      - toggleflymode
+    messages:
+      enabled: "<green>Flight has been enabled for you.</green>"
+      disabled: "<red>Flight has been disabled for you.</red>"
+      others-enabled: "<green>Flight has been enabled for <player>.</green>"
+      others-disabled: "<red>Flight has been disabled for <player>.</red>"
+  gamemode:
+    enabled: true
+    permission: utilities.command.gamemode
+    aliases:
+      - gm
+  grinder:
+    enabled: true
+    permission: utilities.command.grinder
+    aliases:
+      - grindstone
+  loom:
+    enabled: true
+    permission: utilities.command.loom
+    aliases:
+      - loom
+  map:
+    enabled: true
+    permission: utilities.command.map
+    aliases: [ ]
+    message: "<white>Map: <gold><click:open_url:'https://map.server.com'>https://map.server.com</click></gold></white>"
+  setrotation:
+    enabled: true
+    permissions:
+      default: utilities.command.setrotation
+      others: utilities.command.setrotation.others
+    aliases: [ ]
+    messages:
+      self: "<green>Your rotation has been set to yaw=<yaw>, pitch=<pitch>.</green>"
+      others: "<green>Set <player>'s rotation to yaw=<yaw>, pitch=<pitch>.</green>"
+  smith:
+    enabled: true
+    permission: utilities.command.smith
+    aliases:
+      - smithingtable
+      - smithtable
+  spectator:
+    enabled: true
+    permissions:
+      default: utilities.command.spectator
+      others: utilities.command.spectator.others
+    aliases:
+      - gmsp
+      - gm3
+    messages:
+      set: "<green>Your gamemode has been set to Spectator.</green>"
+      others-set: "<green>Set <player>'s gamemode to Spectator.</green>"
+  speed:
+    enabled: true
+    permissions:
+      default: utilities.command.speed
+      others: utilities.command.speed.others
+    aliases:
+      - setspeed
+    messages:
+      set: "<green>Your speed has been set to <speed>.</green>"
+      others-set: "<green>You have set <player>'s speed to <speed>.</green>"
+      error:
+        invalid: "<red>Invalid speed! Please enter a value from 1 to 10.</red>"
+  store:
+    enabled: true
+    permission: utilities.command.store
+    aliases: [ ]
+    message: "<white>Store: <gold><click:open_url:'https://store.server.com'>https://store.server.com</click></gold></white>"
+  survival:
+    enabled: true
+    permissions:
+      default: utilities.command.survival
+      others: utilities.command.survival.others
+    aliases:
+      - gms
+      - gm0
+    messages:
+      set: "<green>Your gamemode has been set to Survival.</green>"
+      others-set: "<green>Set <player>'s gamemode to Survival.</green>"
+  top:
+    enabled: true
+    permission: utilities.command.top
+    aliases: [ ]
+    messages:
+      teleported: "<green>Successfully teleported to the top!</green>"
+  trash:
+    enabled: true
+    permission: utilities.command.trash
+    aliases:
+      - disposal
+  website:
+    enabled: true
+    permission: utilities.command.website
+    aliases: [ ]
+    message: "<white>Website: <gold><click:open_url:'https://server.com'>https://server.com</click></gold></white>"

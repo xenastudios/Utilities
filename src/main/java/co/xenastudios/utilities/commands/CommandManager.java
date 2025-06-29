@@ -148,6 +148,13 @@ public class CommandManager {
 								config.getStringList("commands.trash.aliases")
 						);
 					}
+					if (config.getBoolean("commands.utilitiesadmin.enabled", false)) {
+						commands.registrar().register(
+								UtilitiesAdminCommand.createCommand(plugin),
+								"Manage your Utilities plugin.",
+								config.getStringList("commands.utilitiesadmin.aliases")
+						);
+					}
 					if (config.getBoolean("commands.website.enabled", false)) {
 						commands.registrar().register(
 								WebsiteCommand.createCommand(plugin),

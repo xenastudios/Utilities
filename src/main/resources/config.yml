@@ -148,6 +148,12 @@ commands:
     permission: utilities.command.trash
     aliases:
       - disposal
+  utilitiesadmin:
+    enabled: true
+    permission: afk.command.utilitiesadmin
+    aliases: [ ]
+    messages:
+      config-reloaded: "<green>Utilities's config has been reloaded.</green>"
   website:
     enabled: true
     permission: utilities.command.website

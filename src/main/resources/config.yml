@@ -150,7 +150,7 @@ commands:
       - disposal
   utilitiesadmin:
     enabled: true
-    permission: afk.command.utilitiesadmin
+    permission: utilities.command.utilitiesadmin
     aliases: [ ]
     messages:
       config-reloaded: "<green>Utilities's config has been reloaded.</green>"
